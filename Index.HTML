@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+      <meta http-equiv="Content-Security-Policy" content="...">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Include CSS and JavaScript libraries -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+
+  <script>
+    $(document).ready(function () {
+      $('[data-toggle="popover"]').popover();
+    });
+  </script>
+
+  <script src="./script.js"></script>
+
+  <script>
+    // Your smooth scroll script
+    $(document).ready(function () {
+        // Smooth scroll when clicking on the navigation links
+        $('a.nav-link[href*="#"]').not('[href="#"]').click(function (event) {
+            if (
+                location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
+                location.hostname == this.hostname
+            ) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    event.preventDefault();
+                    $('html, body').animate(
+                        {
+                            scrollTop: target.offset().top
+                        },
+                        1000 // You can adjust the animation speed here (in milliseconds)
+                    );
+                }
+            }
+        });
+    });
+  </script>
+
+
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+        <a class="navbar-brand" href="#">
+            <img src="./images/Logo.gif" width="75px">
+            <span class="navbar-name">ANIKA MCPHEE</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+           <img src="./images/menu.png"> 
+        </button>
+        <div class="collapse navbar-collapse ml-auto" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="https://rogueanuku.github.io/ux-ui-designer-anika/" target="_blank">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#About">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Resume">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+     
+       
+      <div class="jumbotron">
+        
+      <h1>Revitalizing compassion</h1> 
+      <p style="color:#00bFF0; text-align: center; font-weight: 500;">A Case Study by: </p> 
+       <p style="color:#00bFF0; text-align: center; font-weight: 500;"> Anika McPhee, Julie Ng, Chiara Fallani, Raina Al Hussami </p>        
+        <img src="./images/chairs.jpeg">
+        <p style="color:#00bFF0; text-align: center; font-weight: 300; margin-top: 20px;"> June 8th, 2023- June 28th, 2023.</p>
+      </div>
+
+      <div class=" row">    
+         <div class="col-md-12">
+            <h1>The Client</h1>
+            <p>Roger Neilson House is named after the NHL coach Roger Neilson, a passionate advocate for children and recipient of the Order of Canada. It is a collaborative project of the Ottawa Senators Hockey Club, the Ottawa Senators Foundation, and the Children’s Hospital of Eastern Ontario (CHEO). The house fulfills the dream of providing pediatric palliative care services, catering to the needs of both the child and the family, ensuring timely access to essential services.</p>
+              
+           <h1>The Problem</h1>
+              <p>The current philanthropic market is struggling with user engagment and proof of legitimacy which leads to a decline in donations and volunteers. </p>
+            <h1>The Design Process...</h1>  
+           
+          </div>
+      </div>
+      
+  
+      
+      
+    <h1 style="text-align: left;">Step one: Empathize</h1>
+    <div class="row"> 
+      <div class="col-md-6">    
+        <img src="./images/Roger-Neilson-House-original-home.png" alt="...">  
+      </div>
+      <div class="col-md-6"> 
+        <h3>Research Plan</h3>
+        <p>To better understand our users, we employed diverse approaches to analyze their behaviors, desires, necessities, and goals.</p> 
+         <h3>User Interviews</h3>
+         <p>We recruited five participants for remote user interviews, during which they were asked a series of questions related to our research objectives.</p>
+         <h3>Online Surveys</h3>
+         <p>We identified key interview questions and conducted an online survey.</p>
+         <h3>Usability Study</h3>
+         <h3>Heuristic Evaluation</h3>
+         <p>The homepage needs improvement: low-quality images, distracting large hero images, disorganized contact information. Enhance accessibility with larger fonts and consider adding a help button for improved usability.</p>
+        <h3>Competitive Analysis</h3>
+        <p>Our audit consisted of three direct competitors and three indirect competitors</p>
+        <h3>Empathy Map</h3>
+        <p>"I expect to be able to fill a form in two minutes or less"- participant</p>
+        </p>
+        <h3>Affinity Diagram</h3>
+        <p>Users have experienced being ghosted during the application process.</p>
+        <p>Users become frustrated when they need to re-enter information.  </p>
+        <p>Users don't want to have to enter application information if they’ve previously volunteered for the organization. 
+        </p>
+
+      
+      </div>
+      
+    </div>
+ 
+ 
+  
+  <div class="row"> 
+    <h1 style="text-align: left;">Step Two: Define</h1>
+   
+    <div class="col-md-12">  
+       
+          <p >The next step in the design process was to define the problem. For this step, we crafted user insight statements and the problem statement. We defined the problem to be: The volunteer application process has been redesigned to maximize a positive user experience. We've observed that users are less likely to complete the application process if required to re-enter information. following the problem statement, we conducted a feature prioritization matrix and user journey mapping.</p>
+           <h3>User Insight Statement</h3>
+           <h3 >Problem Statement</h3>
+           <h3 >Feature Proiritization Matrix</h3>
+           <h3 >User Journey Map</h3>
+          </div>
+    </div>
+  </div>
+  
+ 
+  <div class="row">
+    <div class="col-md-4">
+        <img src="./images/ideateimg.jpeg" alt="...">
+      </div>
+      <div class="col-md-8">
+         <h2>Step Three: Ideate</h2>
+          <p>How might we save a user's information to make the application process less redundant? The key performance indicators that will measure the level of success are by an increased volume of applications and time spent on the task. following the problem statement, we conducted a feature prioritization matrix and user journey mapping.</p>
+          <p >User Insight Statement</p>
+        </div>
+    </div>
+  </div>
+ 
+  <div class="row">    
+    <div class="col-md-4">
+      <img src="./images/designimg.jpeg" alt="...">
+    </div>
+      <div class="col-md-8">        
+          <h2>Step Four: Design</h2>
+          <p >Four different designs were created for the homepage. The team then discussed the best aspects of each wireframe. We then moved forward with choosing one of the designs and incorporating features we liked from others. After that, we designed the additional flows and utalized site mapping. The result of our sitemapping yeilded the addition of a search bar, user login, and an active donate link so users can donate at any time. Lo-fi prototypes were created and a UI style guide. </p>
+      </div>
+  </div>
+   
+  
+  
+  
+    <div class="row ">
+      <div class="col-md-4">
+        <img src="./images/testimg.jpeg" alt="...">
+      </div>
+      <div class="col-md-8">
+        <h2>Step Five: Test</h2>
+          <p >The testing was conducted remotely, involving a moderated usability study with seven participants. They were given four tasks to assess our redesigned sitemap and user flows. Our findings indicated that 60% of the participants preferred having the 'About Us' section included in the primary navigation bar rather than the secondary navigation links, as originally designed. In response to this valuable feedback, we made the necessary changes and incorporated the About section into the primary navigation bar. Another significant insight we gained from the study is the crucial importance of users being aware that they are on an official not-for-profit webpage. This is particularly crucial for volunteers and donors, as it builds trust and encourages their involvement. To achieve this, easy access to the About Us section was identified as a vital step in establishing the organization's credibility and reliability.</p>
+        
+        
+      </div>
+    </div>
+ 
+  
+    <div class="row ">
+      <div class="col-md-4">
+        <img src="./images/testimg.jpeg" alt="...">
+      </div>
+      <div class="col-md-8">
+       
+          <h5 class="card-title">Summary</h5>
+          <p >For transcript of user research see here:</p>
+          
+       
+      </div>
+    </div>
+ 
+  
+    <div class="row">  
+      <div class="col-md-6">
+        
+         
+           <h2>Original Volunteer Pathway</h2>
+            <img src="./images/Volunteers-Roger-Neilson-House.png" class="card-img-top" alt="...">
+            <p >This is the original volunteer pathway. Our usability study concluded that users are overwhelmed by the amount of text on the page</p>
+      </div>     
+    
+
+      <div class="col-md-6">
+         <h2>Redesign Volunteer Pathway</h2>
+              <img src="./images/Volunteer Page Desk-Hi-FI.png" class="card-img-top" alt="...">
+                 <p >The redesign focused on legibility, simplicity and transparency. We limited the amount of unnecessary information as the original design resulted in users feeling overwhelmed. Time is valuable for users, if they percieve the application will be a long process, it is less likely that they will complete the application process. By adding steps and estimated time of completion we are giving users that informed choice and respects their times. </p>
+      </div>
+     
+    </div>
+ 
+
+  
+ 
+  <div class="row">  
+    <div class="col-md-6">
+      
+        <h2>Original Homepage</h2>
+        <img src="./images/Roger-Neilson-House-original-home.png"  >
+        <p class="card-text">The original design required some user interface overhaul. The heurisitc analysis revealed that the writing ontop of the images is difficult to read and not does not contain the required contrast for accessability standards.  </p>
+    </div>         
+  
+    <div class="col-md-6">
+        
+        <h2>Redesign Homepage</h2>
+        <img src="./images/Homepage.png" alt="...">
+        <p >The redesign ensured that the purpose is clear. The mission statement was placed in the forfront. The donate feature was added to the naviation bar so at any time in the user flow a user can easily navigate and donate. The page passes accessability contrast, an additional messure was considered for accessability purposes such as a text magnifying feature.  </p>
+    </div>       
+  </div>
+  
+  <div class="footer">
+    <div class="footer-links">
+        <ul class="footer-links">
+            <li><a href="" target="_blank">Home</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Resume</a></li>
+            <li><a href="#">Contact</a></li>
+            </ul>
+    </div>
+    <div class="footer-image">
+        <img src="./images/IconOnly_Transparent.png" alt="Footer Image" class="footer-image">
+     <p> © Proudly created by Anika McPhee 2023.</p>
+    </div>
+
+
+  </footer>
+
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>
